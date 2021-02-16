@@ -65,18 +65,18 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN: BRUXINHO MODS\n'
-            + 'ORG:Owner BRUXINHO;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=5511934713306:+55 11 93471-3306\n'
+            + 'FN: Jao\n'
+            + 'ORG:Owner Jao;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=5581997372758:+55 81 99737-2758\n'
             + 'END:VCARD'
 
 prefix = "!"
-name = "~ BRUXINHO  | MODS"
-rdaftar = "OBRIGADO POR SE REGISTAR PARA SER UM TEMENTE BRUXINHO MODS😁"
-rmenu = "BRUXINHO DOMINA KARAY:)"
+name = "~ TIO SAAD  | BOTS"
+rdaftar = "OBRIGADO POR SE REGISTAR🤑"
+rmenu = "TIO SAAD MANDA NESSA POHA KRLH:)"
 limitt = 10
 ban = []
-userpremium = ["5511934713306@s.whatsapp.net"] //ubah nomer kalian
+userpremium = ["5581997372758@s.whatsapp.net"] //ubah nomer kalian
 
 function kyun(seconds){
   function pad(s){
@@ -130,7 +130,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `xauu seu fdp @${num.split('@')[0]}👋`
+				teks = `FOI TARDE OTARIO @${num.split('@')[0]}👋`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -2854,7 +2854,7 @@ case 'asupan':
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[BRUXINHO MODS]','aqua'), 'Comando não registrado', color(sender.split('@')[0]))
+						console.log(color('[TIO SAAD BOTS]','aqua'), 'Comando não registrado', color(sender.split('@')[0]))
 					}
                            }
 		} catch (e) {
