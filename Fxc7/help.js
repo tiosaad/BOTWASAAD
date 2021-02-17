@@ -202,6 +202,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │✝️ *${prefix}mimpi Ular*
 │✝️ *${prefix}infoalamat jalan Banyuwangi*
 │✝️ *${prefix}playstore WhatsApp*
+│✝️ *${prefix}nulis*
 ┬
 ╰───────────────────────────
 
