@@ -13,10 +13,11 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ┣⊱  \`\`\`ATIVO:\`\`\` ${kyun(uptime)}
 ┣⊱  \`\`\`JAM:\`\`\` *${jam} WIB*
 ┣⊱  \`\`\`mes:\`\`\` *${tanggal}*
-┣⊱  \`\`\`VERSAO:\`\`\` *3.0.0*
+┣⊱  \`\`\`VERSAO:\`\`\` *V2*
 ┣⊱  \`\`\`USE TERDAFTAR:\`\`\` *${user.length} User*
 ┣⊱  ❌ *SPAM*
 ┣⊱  ❌ *CALL & VC*
+┣⊱  \`\`\`DONO:\`\`\` https://wa.me/558197372758 
 ┣⊱  \`\`\`\`\`\` *BOT FEITO POR TIO SAAD BOTS*
 ┬
 ╰────────────────────────
