@@ -2844,6 +2844,15 @@ case 'asupan':
 			client.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
 			await limitAdd(sender)
 			break
+		        case 'chatlist':
+					client.updatePresence(from, Presence.composing)  
+					teks = 'This is list of chat number :\n'
+					for (let all of totalchat) {
+						teks += `~> @${all}\n`
+					}
+					teks += `Total : ${totalchat.length}`
+					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": totalchat}})
+					break
 				default:
 					if (body.startsWith(`${prefix}${command}`)) {
                   reply(`Maaf Kak, Command *${prefix}${command}* Não registrado no banco de dados *${prefix}menu*`)
