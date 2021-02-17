@@ -2,8 +2,8 @@
 const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal) => { 
 	return `
 
-\`\`\`APROVEITEM O BOT FML TMJ\`\`\`
-\`\`\`MMEU CANAL: https://http://youtube.com/channel/UCtX3fzhC-teLUpaS7Xz8nKA\`\`\`
+\`\`\`TOMAREM QUE GOSTEM DELE GUYS\`\`\`
+\`\`\`MEU CANAL: https://http://youtube.com/channel/UCtX3fzhC-teLUpaS7Xz8nKA\`\`\`
 
 ╭──────「 *REGULATION ${name}* 」
 ┴
@@ -315,10 +315,10 @@ function kyun(seconds){
 // donasi menu
 const donasi = (name) => { 
 	return `       
-╭─────「 *DONASI SEIKHLASNYA* 」
+╭─────「 *DOAÇÃO* 」
 ┴
-│√ *PULSA: 08311800241*
-│√ *OVO : 08311800241*
+│√ *PULSA: 5581997372758*
+│√ *OVO : 5581997372758*
 ┬
 ╰──────「 *BY ${name}* 」
 
