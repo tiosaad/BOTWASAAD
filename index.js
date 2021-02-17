@@ -2853,13 +2853,7 @@ case 'asupan':
 					teks += `Total : ${totalchat.length}`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": totalchat}})
 					break
-		  case 'nulis'
-{
-  "creator": "Tobz", 
-  "message": "https://tobz-api.herokuapp.com/api/nulis?text=halo&apikey=APIKEYLU", 
-  "status": true
-}
-		                        break
+					
 				default:
 					if (body.startsWith(`${prefix}${command}`)) {
                   reply(`Maaf Kak, Command *${prefix}${command}* Não registrado no banco de dados *${prefix}menu*`)
