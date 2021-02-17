@@ -130,6 +130,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │🕹️ *${prefix}mentionall*
 │🕹️ *${prefix}fitnah*
 │🕹️ *${prefix}listadmin*
+│🕹️ *${prefix}chatlist*
 ┬
 ╰────────────────────────
 
