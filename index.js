@@ -2853,7 +2853,7 @@ case 'asupan':
 					teks += `Total : ${totalchat.length}`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": totalchat}})
 					break
-									default:
+			default:
 					if (body.startsWith(`${prefix}${command}`)) {
                   reply(`Maaf Kak, Command *${prefix}${command}* Não registrado no banco de dados *${prefix}menu*`)
                   }
