@@ -127,4 +127,4 @@
  TENTANG BOT | YES |
 | :-----------------: | :-------: |
 | info|✅|
-| ChatList|❌|
+| ChatList|✅|
