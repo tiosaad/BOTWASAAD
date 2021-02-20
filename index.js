@@ -67,7 +67,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
             + 'FN: Jao\n'
             + 'ORG:Owner TIO SAAD;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=558197372758:+55 81 9737-2758\n'
+            + 'TEL;type=CELL;type=VOICE;waid=5581997372758:+55 81 99737-2758\n'
             + 'END:VCARD'
 
 prefix = "!"
@@ -333,7 +333,7 @@ async function starts() {
 					break
 		case 'daftar':
 					client.updatePresence(from, Presence.composing)
-					if (isUser) return reply('vocês já são amigos do BRUXINHO MODS:D')
+					if (isUser) return reply('vocês já são BROTHERS DO TIO SAAD NE PA3:D')
 					if (isBanned) return reply(mess.only.benned)
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
