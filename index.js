@@ -130,7 +130,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `xauu seu fdp @${num.split('@')[0]}👋`
+				teks = `JA FOI CEDO SEU FDP @${num.split('@')[0]}🤑`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -180,7 +180,7 @@ async function starts() {
 			
 
 			mess = {
-				wait: '*⏳ AGUARDE um pouco mano...*',
+				wait: '*⏳ CALMA AE VADIA TO FAZENDO...*',
 				success: '*ꜱᵘᶜᵉˢˢᵒ...*',
 				error: {
 					stick: ' *ocorreu um erro ao converter uma imagem em adesivo*',
@@ -199,7 +199,7 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["5511934713306@s.whatsapp.net"] // owner number ubah aja
+			const ownerNumber = ["558197372758@s.whatsapp.net"] // owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
