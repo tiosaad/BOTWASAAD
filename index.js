@@ -65,18 +65,18 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN: BRUXINHO MODS\n'
+            + 'FN: Jao\n'
             + 'ORG:Owner BRUXINHO;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=5511934713306:+55 11 93471-3306\n'
+            + 'TEL;type=CELL;type=VOICE;waid=558197372758:+55 81 9737-2758\n'
             + 'END:VCARD'
 
 prefix = "!"
-name = "~ BRUXINHO  | MODS"
-rdaftar = "OBRIGADO POR SE REGISTAR PARA SER UM TEMENTE BRUXINHO MODS😁"
-rmenu = "BRUXINHO DOMINA KARAY:)"
-limitt = 10
+name = "~ TIO SAAD  | BOTS"
+rdaftar = "OBRIGADO POR SE REGISTAR 🤑"
+rmenu = "TIO SAAD MANDA NESSA POHA KRAI:)"
+limitt = 190
 ban = []
-userpremium = ["5511934713306@s.whatsapp.net"] //ubah nomer kalian
+userpremium = ["558197372758@s.whatsapp.net"] //ubah nomer kalian
 
 function kyun(seconds){
   function pad(s){
@@ -2854,7 +2854,7 @@ case 'asupan':
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[BRUXINHO MODS]','aqua'), 'Comando não registrado', color(sender.split('@')[0]))
+						console.log(color('[TIO SAAD BOTS]','aqua'), 'Comando não registrado', color(sender.split('@')[0]))
 					}
                            }
 		} catch (e) {
