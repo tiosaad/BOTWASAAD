@@ -11,5 +11,5 @@ wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-oc
 
 npm install
 
-echo "[*] NICE OPHA TU FEZ CERTO SO DAR UM /npm start/ QUE INICIA"
+echo "[*]NICE OPHA TU FEZ CERTO SO DAR UM /npm start/ QUE INICIA"
 echo "Updates : BUGS FORAO RETIRADOS E MUDANÇAS NO BOT"
