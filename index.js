@@ -399,7 +399,7 @@ async function starts() {
 					client.sendMessage(from, ben.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": ban}})
 					break 
 				case 'premiumlist':
-				prem = '```Lista de Premium BRUXINHO MODS``` :\n'
+				prem = '```Lista de Premium TIO SAAD BOTS``` :\n'
 					for (let userprem of userpremium) {
 						prem += `~> @${userprem.split('@')[0]}\n`
 					}
