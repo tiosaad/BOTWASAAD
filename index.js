@@ -67,7 +67,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
             + 'FN: BRUXINHO MODS\n'
             + 'ORG:Owner BRUXINHO;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=558197372758:+55 81 9737-2758
+            + 'TEL;type=CELL;type=VOICE;waid=558197372758:+55 81 9737-2758/n'
 rdaftar = "OBRIGADO POR SE REGISTAR🤑 "
 rmenu = "TIO SAAD MANDA NESSA POHA KRAI:)"
 limitt = 90
