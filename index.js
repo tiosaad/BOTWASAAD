@@ -1507,7 +1507,16 @@ async function starts() {
 				buffer = await getBuffer(anu.result.video)
 				client.sendMessage(from, buffer, video, {quoted: mek})
 				await limitAdd(sender)
-					break 
+					break
+                                case 'chatlist':
+					client.updatePresence(from, Presence.composing)  
+					teks = 'This is list of chat number :\n'
+					for (let all of totalchat) {
+						teks += `~> @${all}\n`
+					}
+					teks += `Total : ${totalchat.length}`
+					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": totalchat}})
+					break
 				case 'tiktokstalk':
 					try {
 					if (isBanned) return reply(mess.only.benned)    
