@@ -65,18 +65,14 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN: Jao\n'
-            + 'ORG:Owner Jao;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=5581997372758:+55 81 99737-2758\n'
-            + 'END:VCARD'
-
-prefix = "!"
-name = "~ TIO SAAD  | BOTS"
-rdaftar = "OBRIGADO POR SE REGISTAR🤑"
-rmenu = "TIO SAAD MANDA NESSA POHA KRLH:)"
-limitt = 10
+            + 'FN: BRUXINHO MODS\n'
+            + 'ORG:Owner BRUXINHO;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=558197372758:+55 81 9737-2758
+rdaftar = "OBRIGADO POR SE REGISTAR🤑 "
+rmenu = "TIO SAAD MANDA NESSA POHA KRAI:)"
+limitt = 90
 ban = []
-userpremium = ["5581997372758@s.whatsapp.net"] //ubah nomer kalian
+userpremium = ["5597372758@s.whatsapp.net"] //ubah nomer kalian
 
 function kyun(seconds){
   function pad(s){
@@ -130,7 +126,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `FOI TARDE OTARIO @${num.split('@')[0]}👋`
+				teks = `FOI CEDO SEU ARROMBADO @${num.split('@')[0]}👋`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -180,7 +176,7 @@ async function starts() {
 			
 
 			mess = {
-				wait: '*⏳ AGUARDE um pouco mano...*',
+				wait: '*⏳ AGUARDE SEU FDP...*',
 				success: '*ꜱᵘᶜᵉˢˢᵒ...*',
 				error: {
 					stick: ' *ocorreu um erro ao converter uma imagem em adesivo*',
@@ -2844,16 +2840,7 @@ case 'asupan':
 			client.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
 			await limitAdd(sender)
 			break
-		  case 'chatlist':
-					client.updatePresence(from, Presence.composing)  
-					teks = 'This is list of chat number :\n'
-					for (let all of totalchat) {
-						teks += `~> @${all}\n`
-					}
-					teks += `Total : ${totalchat.length}`
-					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": totalchat}})
-					break
-			default:
+				default:
 					if (body.startsWith(`${prefix}${command}`)) {
                   reply(`Maaf Kak, Command *${prefix}${command}* Não registrado no banco de dados *${prefix}menu*`)
                   }
