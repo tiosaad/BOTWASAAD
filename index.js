@@ -1023,6 +1023,14 @@ async function starts() {
 					}
 					await limitAdd(sender)
 					break 
+					case 'darkjokes':
+				 data = fs.readFileSync('./src/darkjokes.js');
+                 jsonData = JSON.parse(data);
+                 randIndex = Math.floor(Math.random() * jsonData.length);
+                 randKey = jsonData[randIndex];
+                hasil = await getBuffer(randKey.result)
+                sendImage(hasil, mek, '*GELAP BOS :V*')
+				break
 			    case 'nsfwneko':
 				    try {
 				    if (isBanned) return reply(mess.only.benned)    
