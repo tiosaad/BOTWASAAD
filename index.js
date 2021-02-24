@@ -374,6 +374,10 @@ async function starts() {
 				case 'donate':
 					client.sendMessage(from, donasi(name), text, {quoted: mek})
 					break
+case 'oi':
+tujuh = fs.readFileSync('./assets/ropa.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
 				case 'info':
 					me = client.user
 					user.push(sender)
