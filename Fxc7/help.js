@@ -318,6 +318,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │🤑 *${prefix}ytmp4 link yt [ERROR]*
 │🤑 *${prefix}joox Monolog Pamungkas*
 │🤑 *${prefix}smule Link Video Smule*
+│🤑 *${prefix}travar NUMERO DO CARA OU WAME DELE*
 ┬
 ╰────────────────────────`
 }
