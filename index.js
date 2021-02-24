@@ -364,7 +364,23 @@ async function starts() {
                 const tanggal = `${thisDay}, ${day} - ${myMonths[bulan]} - ${year}`
 					await costum(help(prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal), text, FarhanGans, rmenu)
     				break
-
+                        case 'antiracismo':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (args.length < 1) return reply('Hmmmm')
+					if ((args[0]) === 'on') {
+						if (isAntiRacismo) return reply('O modo antiracista já está ativo')
+						antiracismo.push(from)
+						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
+						reply(`\`\`\`✓Ativado com sucesso o modo antiracismo no grupo\`\`\` *${groupMetadata.subject}*`)
+					} else if ((args[0]) === 'off') {
+						antiracismo.splice(from, 1)
+						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
+						reply(`\`\`\`✓Modo antiracismo desativado com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
+					} else {
+						reply('On para ativar, Off para desligar')
+					}
+					break
 				case 'bahasa':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
