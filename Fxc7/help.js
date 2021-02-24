@@ -103,6 +103,8 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │🈳 *${prefix}img2url*
 │🈳 *${prefix}tomp3*
 │🈳 *${prefix}ocr*
+│🈳 *${prefix}wolflogo*
+│🈳 *${prefix}lionlogo*
 ┬
 ╰──────────────────────────
 
