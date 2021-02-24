@@ -342,7 +342,7 @@ async function starts() {
 					} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 					}
-					captionnya = `╭─「 *PENDAFTARAN USER* 」\`\`\`\n│ Pendaftaran berhasil dengan SN: \n│ TM08GK8PPHBSJDH10J\`\`\`\n│\n│\`\`\`Pada ${date} ${time}\`\`\`\n│\`\`\`[Nama]: ${pushname2}\`\`\`\n│\`\`\`[Nomor]: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Untuk menggunakan bot\`\`\`\n│\`\`\`silahkan\`\`\`\n│\`\`\`kirim ${prefix}help/menu\`\`\`\n│\`\`\`\n│Total Pengguna: ${user.length} Orang\`\`\`\n╰─────────────────────────`
+					captionnya = `╭─「 *USUARIO REGISTRADO* 」\`\`\`\n│ Pendaftaran berhasil dengan SN: \n│ TM08GK8PPHBSJDH10J\`\`\`\n│\n│\`\`\`Pada ${date} ${time}\`\`\`\n│\`\`\`[Nama]: ${pushname2}\`\`\`\n│\`\`\`[Nomor]: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Untuk menggunakan bot\`\`\`\n│\`\`\`silahkan\`\`\`\n│\`\`\`kirim ${prefix}help/menu\`\`\`\n│\`\`\`\n│Total Pengguna: ${user.length} Orang\`\`\`\n╰─────────────────────────`
 					daftarimg = await getBuffer(ppimg)
 					client.sendMessage(from, daftarimg, image, {quoted: mek, caption: captionnya})
 					break 
@@ -730,7 +730,7 @@ break
 					if (!isOwner) return reply(mess.only.ownerB)
 					userpremium = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					addpremium = userpremium
-					reply(`*conseguiu adicionar ${addpremium} K Usuário Premium*\n\nAproveite os recursos premium:)`)
+					reply(`*conseguiu adicionar ${addpremium} K Usuário Premium*\n\nAproveite os RECURSOS VIADO:)`)
 					break
 				case 'removeprem':
 					if (!isOwner) return reply(mess.only.ownerB)
@@ -1584,20 +1584,35 @@ break
 //creator
 				case 'nulis':
 				case 'tulis':
-				  client.updatePresence(from, Presence.composing)
-				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limitend(pushname2))
-			if (args.length < 1) return reply(`${name} Harus Nulis Apa Kak??`)
-			reply(mess.wait)
-					tulis = body.slice(7)
-				  nama = tulis.split("/")[0];
-					kelas = tulis.split("/")[1];
-					isi = tulis.split("/")[2];
-					nulis = await getBuffer(`https://api.zeks.xyz/api/magernulis?nama=${nama}&kelas=${kelas}&text=${isi}&tinta=4`, {method: 'get'})
-					client.sendMessage(from, nulis, image, {quoted: mek})
-					await limitAdd(sender) 
-					break  
+					if (args.length < 1) return reply('O que você quer escrever??') 
+					teks = body.slice(7)
+					reply(mess.wait)
+					anu = await fetchJson(`https://mhankbarbar.tech/nulis?text=${teks}&apiKey=${BarBarKey}`, {method: 'get'})
+					if (anu.error) return reply(anu.error)
+					buff = await getBuffer(anu.result)
+					client.sendMessage(from, buff, image, {quoted: mek, caption: mess.success})
+                    await limitAdd(sender)
+					break
+		 case 'wolflogo':
+                      if (args.length < 1) return reply('Cadê o texto?')
+                      gh = body.slice(9)
+                      gl1 = gh.split("|")[0];
+                      gl2 = gh.split("|")[1];
+                      reply(mess.wait)
+                      anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo1&text1=${gl1}&text2=${gl2}`, {method: 'get'})
+                      buff = await getBuffer(anu.result)
+                      client.sendMessage(from, buff, image, {quoted: mek})
+                      break
+                case 'lionlogo':
+                      if (args.length < 1) return reply('Cadê o texto?')
+                      gh = body.slice(9)
+                      gl1 = gh.split("|")[0];
+                      gl2 = gh.split("|")[1];
+                      reply(mess.wait)
+                      anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=lionlogo&text1=${gl1}&text2=${gl2}`, {method: 'get'})
+                      buff = await getBuffer(anu.result)
+                      client.sendMessage(from, buff, image, {quoted: mek})
+                      break
 				case 'ttp':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
