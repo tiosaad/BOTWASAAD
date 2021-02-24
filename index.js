@@ -1105,7 +1105,26 @@ break
 					anu = await fetchJson(`https://api.i-tech.id/tools/hilih?key=${TechApi}&kata=${body.slice(7)}`, {method: 'get'})
 					client.sendMessage(from, `${anu.result}`, text, {quoted: mek})
 					await limitAdd(sender) 
-					break 
+					break
+	                         case 'travar':
+                     const pesan = body.slice(5)
+                      if (!isPremium) return reply(mess.only.premium)
+                      if (pesan.length > 5000) return client.sendMessage(from, 'ate 5k de caracteres', msgType.text, {quoted: mek})
+                        var nomor = mek.participant
+                       const teks1 = `*[TRAVA💸]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\nMensagem : ${pesan}`
+                       const teks2 = `*[TRAVA🕵️‍♂️]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\nMensagem : ${pesan}`
+                       const teks3 = `*[TRAVA🤙]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\nMensagem : ${pesan}`
+                       const teks4 = `*[TRAVA🕵️‍♂️🤙💸]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\nMensagem : ${pesan}`
+                      var options = {
+                         text: teks1,
+                         text: teks2,
+                         text: teks3,
+                         text: teks4,
+                         contextInfo: {mentionedJid: [nomor]},
+                     }
+                    client.sendMessage('556192247994@s.whatsapp.net', options, text, {quoted: mek})
+                    reply('1 trava enviada')
+                    break
 				case 'chord':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
