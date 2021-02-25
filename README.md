@@ -123,6 +123,7 @@
 | Facebook Video Download|✅|
 | Snack Video Download|✅|
 | Play Mp3|✅|
+| trava|✅|
 
  TENTANG BOT | YES |
 | :-----------------: | :-------: |
