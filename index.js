@@ -394,6 +394,10 @@ case 'oi':
 tujuh = fs.readFileSync('./assets/ropa.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
+case 'fdp':
+tujuh = fs.readFileSync('./assets/fdp.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
 				case 'info':
 					me = client.user
 					user.push(sender)
