@@ -331,6 +331,44 @@ async function starts() {
 					teks += `│+ Total de usuários : ${user.length}\n╰──────*⎿ *${name}* ⏋*────`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": user}})
 					break
+					case 'modoanime':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (args.length < 1) return reply('Hmmmm')
+					if ((args[0]) === 'on') {
+						if (isAnime) return reply('O modo anime já está ativo')
+						anime.push(from)
+						fs.writeFileSync('./database/json/anime.json', JSON.stringify(anime))
+						reply(`\`\`\`✓Ativado com sucesso o modo anime no grupo\`\`\` *${groupMetadata.subject}*`)
+					} else if ((args[0]) === 'off') {
+						anime.splice(from, 1)
+						fs.writeFileSync('./database/json/anime.json', JSON.stringify(anime))
+						reply(`\`\`\`✓Modo anime desativado com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
+					} else {
+						reply('On para ativar, Off para desligar')
+					}
+					break
+					case 'antilink':
+                    if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+					if (args.length < 1) return reply('digite 1 para ativar ')
+					if (Number(args[0]) === 1) {
+						if (isAntiLink) return reply('o anti-link está ativo')
+						antilink.push(from)
+						fs.writeFileSync('./src/antilink.json', JSON.stringify(antilink))
+						reply('Grupo anti-link ativado com sucesso neste grupo ✔️')
+						client.sendMessage(from,`Atencao a todos os membros ativos deste grupo anti-link. ee você enviar um link de grupo, voce sera expulso daqui  grupo`, text)
+					} else if (Number(args[0]) === 0) {
+						if (!isantilink) return reply('O modo de grupo anti-link foi desabilitado ')
+						var ini = anti.clientOf(from)
+						antilink.splice(ini, 1)
+						fs.writeFileSync('./src/antilink.json', JSON.stringify(antilink))
+						reply('Desativar grupo anti-link com sucesso neste grupo ✔️')
+					} else {
+						reply('1 para ativar, 0 para desativar ')
+					}
+					break
 		case 'daftar':
 					client.updatePresence(from, Presence.composing)
 					if (isUser) return reply('vocês já são BROTHERS DO TIO SAAD NE PA3:D')
