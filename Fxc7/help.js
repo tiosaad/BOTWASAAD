@@ -166,6 +166,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │❗ *${prefix}nsfwtrap*
 │❗ *${prefix}hentai*
 │❗ *${prefix}simih On/Off*
+│❗ *${prefix}modoanime*
 ┬
 ╰────────────────────────
 
