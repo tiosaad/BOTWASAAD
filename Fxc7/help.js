@@ -43,8 +43,8 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 
 ╭──────「 *AUDIO DO MEU CRIADOR* 」
 ┴
-│🌀 *${prefix}oi
-│🌀 *${prefix}
+│🌀 *${prefix}oi*
+│🌀 *${prefix}fdp*
 │🌀 *${prefix}
 │🌀 *${prefix}
 │🌀 *${prefix}
